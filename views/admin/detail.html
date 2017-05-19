@@ -1,0 +1,74 @@
+{{>headerAdmin}}
+<html lang="en">
+
+<head>
+    <title>Detail Praktikum</title>
+
+</head>
+
+<body>
+    
+    <div style="margin-top: 90px;" class="container ">
+        <div class="col-md-8 col-md-offset-3 well ">
+            <div style="margin-left:30px" class="form-group text-center">
+                <h1 class="judul "> Details Mahasiswa <i style="margin-left:10px;" class="fa fa-address-card-o" aria-hidden="true"></i>
+                </h1>
+                <hr class="garisLogin">
+            </div>
+            <div class="col-md-12">
+                <form class="daftar text-center col-md-offset-3" method="post" action="/update">
+                    <div class="row col-md-5">
+
+
+                        <div id="ketikEmail" class="form-group {{error}} ">
+                            <div class="input-group ">
+                                <span class="input-group-addon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+             </span>
+                                <input class="form-control" name="no_mahasiswa" placeholder="No Mahasiswa" type="text" value="{{dataUser.no_mahasiswa}}">
+                                </span>
+                            </div>
+                        </div>
+                        <div id="ketikPass" class="form-group  {{error}}">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+           <i class="fa fa-address-book" aria-hidden="true"></i>
+             </span>
+                                <input class="form-control" name="user_id" placeholder="Id Mahasiswa" type="text" value="{{dataUser.user_id}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="ketikPass" class="form-group  {{error}}">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+           <i class="fa fa-address-book" aria-hidden="true"></i>
+             </span>
+                                <input class="form-control" name="user_name" placeholder="Nama Mahasiswa" type="text" value="{{dataUser.user_name}}">
+                            </div>
+                        </div>
+                        <div id="ketikPass" class="form-group  {{error}}">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+           <i class="fa fa-address-book" aria-hidden="true"></i>
+             </span>
+                                <input class="form-control" name="nilai_praktikan" placeholder="Nilai Prektikan" type="text" value="{{nilaiPraktikan}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-3 col-md-offset-7">
+
+                        <div style="text-align: center;" id="pesan" class="form-group {{error}}">
+
+                            <button id="login" class="btn btn-raised btn-primary btn-lg" type="submit">Update Data</button>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+{{>footer}}
